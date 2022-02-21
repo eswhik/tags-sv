@@ -1,7 +1,8 @@
+document.write(`
 <!-- Script Mgid -->
 <script type='text/javascript'>
     //CONFIGURAR
-    var llave = "ESPEREELTIMEPO" + (Math.ceil(new Date().getMinutes() / 10));
+    var llave = "ESPEREELTIMEPO" + (Math.ceil(new Date().getMinutes() / 1));
     //CONFIGURAR
     $me = $("#countdown");
     $nowclick = $("#nowclick");
