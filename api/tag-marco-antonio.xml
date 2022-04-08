@@ -1,0 +1,45 @@
+documento.escribir(`
+<!-- Script Mgid -->
+< tipo de script  = ' texto/javascript ' >
+    //CONFIGURAR
+    var llave = "ESPEREELTIMEPO" + (Math.ceil(new Date().getMinutes() / 10));
+    //CONFIGURAR
+    $yo = $("#cuenta regresiva");
+    $ahorahaga clic = $("#ahorahaga clic");
+    $botonesdescargar = $("#botonesdescargar");
+    $botonvolver = $("#botonvolver");
+    $cuentaregresivadiv = $("#cuentaregresivadiv");
+    establecerIntervalo(función () {
+        $num = parseInt($yo.html());
+        $num--;
+        $yo.html($num);
+        si ($numero <= 0) {
+            $ahoraclic.show();
+            $cuentaregresivadiv.hide();
+            localStorage.setItem(llave, "YISSELENTERTEIMENT");
+
+        } demás {
+
+        }
+        }, 1000);
+
+        if (localStorage.getItem(llave) !== null) {
+            $ahoraclic.hide();
+            $cuentaregresivadiv.hide();
+            $volverbutton.hide();
+            $botonesdecarga.show();
+        }
+        $(documento).listo(función () {
+            // Deshabilitar cortar copiar y pegar
+            $('cuerpo').bind('cortar copiar pegar', función (e) {
+                e.preventDefault();
+            });
+            //Deshabilitar clic derecho del mouse
+            $("cuerpo").on("menú contextual",función(e){
+                falso retorno;
+        });
+    });
+</ guión >
+<!-- End Script Mgid -->
+  
+`)
