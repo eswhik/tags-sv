@@ -2,7 +2,7 @@ document.write(`
 <!-- Script Mgid -->
 <script type='text/javascript'>
     //CONFIGURAR
-    var llave = "ESPEREELTIMEPO" + (Math.ceil(new Date().getMinutes() / 5));
+    var llave = "ESPEREELTIMEPO" + (Math.ceil(new Date().getMinutes() / 4));
     //CONFIGURAR
     $me = $("#countdown");
     $nowclick = $("#nowclick");
